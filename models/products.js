@@ -1,7 +1,8 @@
-const { DataTypes } = require("sequelize");
-const sequelize = require("./index");
-const User = require("./user");
-const Products = sequelize.define("Product", {
+const { DataTypes } = require('sequelize');
+const sequelize = require('./index');
+const User = require('./user');
+
+const Products = sequelize.define('Product', {
   id_produk: {
     type: DataTypes.INTEGER,
     primaryKey: true,
@@ -28,9 +29,10 @@ const Products = sequelize.define("Product", {
     allowNull: false,
     references: {
       model: User,
-      key: "userID",
+      key: 'id_akun',
     },
   },
 });
 
 module.exports = Products;
+
