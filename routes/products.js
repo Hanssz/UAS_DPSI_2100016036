@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 const Products = require("../models/products");
 const { authenticate, authorize } = require("../middleware/auth");
-const upload = require("../middleware/upload");
 
 router.post(
   "/",
