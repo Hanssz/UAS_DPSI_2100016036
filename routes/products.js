@@ -8,14 +8,9 @@ router.post(
   "/",
   authenticate,
   authorize(["admin"]), 
-  upload.single("img"),
   async (req, res, next) => {
     try {
       const productData = req.body;
-      if (req.file) {
-        productData.img = req.file.path;
-      }
-      console.log(productData);
       const newProduct = await Products.create(productData);
       res.status(201).json(newProduct);
     } catch (err) {
@@ -51,7 +46,6 @@ router.put(
   "/:id",
   authenticate,
   authorize(["admin"]),
-  upload.single("img"),
   async (req, res, next) => {
     try {
       const product = await Products.findByPk(req.params.id);
@@ -60,9 +54,6 @@ router.put(
           if (req.body.hasOwnProperty(key)) {
             product[key] = req.body[key];
           }
-        }
-        if (req.file) {
-          product.img = req.file.path;
         }
         await product.save();
         res.json(product);
