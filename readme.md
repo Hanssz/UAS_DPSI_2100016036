@@ -10,7 +10,7 @@ Dokumentasi API dari aplikasi jualan kaca, API ini mencakup fitur registrasi, lo
 
 ```
 Endpoint: POST /auth/register
-URL: https://uas-dpsi.vercel.app/auth/register
+URL: https://uas-dpsi-2100016036.vercel.app/auth/register
 ```
 
 ## Endpoint
@@ -33,7 +33,7 @@ URL: https://uas-dpsi.vercel.app/auth/register
 
 ### 2. Login
 Endpoint: POST /auth/login
-URL: https://uas-dpsi.vercel.app/auth/login
+URL: https://uas-dpsi-2100016036.vercel.app/auth/login
 
 - **URL:** `/auth/login`
 - **Metode:** `POST`
@@ -52,7 +52,7 @@ URL: https://uas-dpsi.vercel.app/auth/login
 ### 3. Tambah Produk
 
 Endpoint: POST /products/
-URL: https://uas-dpsi.vercel.app/products/
+URL: https://uas-dpsi-2100016036.vercel.app/products/
 
 - **URL:** `/products/`
 - **Metode:** `POST`
@@ -70,14 +70,13 @@ URL: https://uas-dpsi.vercel.app/products/
     "stock": "100",
     "price": "27100000",
     "userID": "01",
-    "img": "/home/hanif/Pictures/gambar wajah.png"
 }
 ```
 - **Deskripsi:** menambahkan prduk ke sistem.
 
 ### 4. Buat Pesanan
 Endpoint: POST /order/
-URL: https://uas-dpsi.vercel.app/order/
+URL: https://uas-dpsi-2100016036.vercel.app/order/
 - **URL:** `/order/`
 - **Metode:** `POST`
 - **Header:**
@@ -99,7 +98,7 @@ URL: https://uas-dpsi.vercel.app/order/
 
 }
 ```
-- **Deskripsi:** Emembuat pesanan baru produk
+- **Deskripsi:** Membuat pesanan baru produk
 
 
 ```json
