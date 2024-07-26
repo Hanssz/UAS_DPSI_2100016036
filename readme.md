@@ -93,7 +93,7 @@ URL: https://uas-dpsi-2100016036.vercel.app/order/
   "totalPrice": 271000,
   "quantity": 3,
   "productID": 1,
-  "userID": 01
+  "userID": 1
 }
 
 }
@@ -121,7 +121,7 @@ https://docs.google.com/document/d/1BWv3G6bingz5MbHhq4zVzt5jS2cIJuB4/edit?usp=sh
 ### Registrasi
 
 ```bash
-curl -X POST https://uas-dpsi.vercel.app/auth/register \
+curl -X POST https://uas-dpsi-2100016036.vercel.app/auth/register \
 -H "Content-Type: application/json" \
 -d '{
   "username":"hanif",
@@ -134,7 +134,7 @@ curl -X POST https://uas-dpsi.vercel.app/auth/register \
 ### Login
 
 ```bash
-curl -X POST https://uas-dpsi.vercel.app/auth/login \
+curl -X POST https://uas-dpsi-2100016036.vercel.app/auth/login \
 -H "Content-Type: application/json" \
 -d '{
   "username":"hanif",
@@ -147,7 +147,7 @@ curl -X POST https://uas-dpsi.vercel.app/auth/login \
 ### Tambah Produk
 
 ```bash
-curl -X POST https://uas-dpsi.vercel.app/products/ \
+curl -X POST https://uas-dpsi-2100016036.vercel.app/products/ \
 -H "Authorization: Bearer <token>" \
 -H "Content-Type: multipart/form-data" \
 -F "name=Toko Kaca" \
@@ -161,7 +161,7 @@ curl -X POST https://uas-dpsi.vercel.app/products/ \
 ### Buat Pesanan
 
 ```bash
-curl -X POST https://uas-dpsi.vercel.app/order/ \
+curl -X POST https://uas-dpsi-2100016036.vercel.app/order/ \
 -H "Authorization: Bearer <token>" \
 -H "Content-Type: application/json" \
 -d '{
